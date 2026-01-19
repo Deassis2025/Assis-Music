@@ -9,9 +9,9 @@ let playing = false;
 
 
 const playlist = [
-{ title:'Largado às Traças', artist:'Zé Neto & Cristiano', src:'musicas/zeneto.mp3', cover:'capas/zeneto.jpg' },
-{ title:'Infiel', artist:'Marília Mendonça', src:'musicas/marilia.mp3', cover:'capas/marilia.jpg' },
-{ title:'Cê Que Sabe', artist:'Cristiano Araújo', src:'musicas/cristiano.mp3', cover:'capas/cristiano.jpg' }
+{ title:'Largado às Traças', artist:'Zé Neto & Cristiano', src:'musicas/Zé Neto e Cristiano - LARGADO ÀS TRAÇAS - #EsqueceOMundoLaFora - Zé Neto e Cristiano.mp3', cover:'capas/zeneto.jpg' },
+{ title:'Infiel', artist:'Marília Mendonça', src:'musicas/Marília Mendonça - Infiel (Vídeo Oficial) - Marília Mendonça.mp3', cover:'capas/marilia.jpg' },
+{ title:'Cê Que Sabe', artist:'Cristiano Araújo', src:'musicas/Cristiano Araújo - Cê Que Sabe (Vídeo Oficial) - Cristiano Araújo.mp3', cover:'capas/cristiano.jpg' }
 ];
 
 
