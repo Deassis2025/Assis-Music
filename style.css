@@ -41,3 +41,17 @@ body { margin:0; background:#121212; color:white; font-family:Arial, sans-serif;
 .player .controls button:hover {
   color: #1db954;
 }
+.bar {
+  flex: 1;
+  height: 4px;
+  background: #555;
+  border-radius: 4px;
+  position: relative;
+}
+
+.fill {
+  height: 100%;
+  width: 0%;
+  background: #1db954;
+  border-radius: 4px;
+}
