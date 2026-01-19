@@ -15,23 +15,27 @@ const playlist = [
 ];
 
 
-const progressBar = document.getElementById('progressBar');
+const fill = document.getElementById('fill');
 const currentTimeEl = document.getElementById('currentTime');
 const durationEl = document.getElementById('duration');
 
-
 audio.addEventListener('timeupdate', () => {
-const percent = (audio.currentTime / audio.duration) * 100;
-progressBar.value = percent || 0;
-currentTimeEl.innerText = formatTime(audio.currentTime);
-durationEl.innerText = formatTime(audio.duration);
+  if (!audio.duration) return;
+
+  const percent = (audio.currentTime / audio.duration) * 100;
+  fill.style.width = percent + '%';
+
+  currentTimeEl.innerText = formatTime(audio.currentTime);
+  durationEl.innerText = formatTime(audio.duration);
 });
 
+function seek(e) {
+  const bar = e.currentTarget;
+  const clickX = e.offsetX;
+  const width = bar.offsetWidth;
 
-progressBar.addEventListener('input', () => {
-audio.currentTime = (progressBar.value / 100) * audio.duration;
-});
-
+  audio.currentTime = (clickX / width) * audio.duration;
+}
 
 function formatTime(time){ if(!time) return '0:00'; const m=Math.floor(time/60); const s=Math.floor(time%60).toString().padStart(2,'0'); return `${m}:${s}`; }
 
