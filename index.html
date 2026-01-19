@@ -54,12 +54,16 @@
 <button onclick="prev()">⏮</button>
 <button onclick="toggle()">⏯</button>
 <button onclick="next()">⏭</button>
-</div>
 <div class="progress">
-<span id="currentTime">0:00</span>
-<input type="range" id="progressBar" value="0" min="0" max="100">
-<span id="duration">0:00</span>
+  <span id="current">0:00</span>
+
+  <div class="bar" onclick="seek(event)">
+    <div class="fill" id="fill"></div>
+  </div>
+
+  <span id="duration">0:00</span>
 </div>
+  
 <audio id="audio"></audio>
 </footer>
 
