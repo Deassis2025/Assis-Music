@@ -19,11 +19,6 @@ body { margin:0; background:#121212; color:white; font-family:Arial, sans-serif;
 .player .info { flex:1; }
 .controls { display:flex; justify-content:center; margin-top:5px; }
 .progress {
-display: flex;
-align-items: center;
-gap: 6px;
-font-size: 12px;
-.progress {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -32,11 +27,17 @@ font-size: 12px;
 
 .progress input[type=range] {
   flex: 1;
-  transform: scaleY(0.4); /* 🔥 ISSO RESOLVE NO ANDROID */
+  transform: scaleY(0.4); /* barra fina no Android */
 }
-           
-.player img { width:55px; height:55px; border-radius:6px; margin-right:10px; }
-.player .info { flex:1; }
-.player .controls button { background:none; border:none; color:white; font-size:20px; margin:0 5px; }
-.player .controls button:hover { color:#1db954; }
-           
+
+.player .controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.player .controls button:hover {
+  color: #1db954;
+}
